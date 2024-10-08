@@ -13,14 +13,16 @@ import { FULL_TITLE } from "../consts";
   <body>
     <!-- <Header /> -->
     <main>
-	  <div class="relative">
-		<img class="relative brightness-95" src="/groningen.jpg" />
-		<div class="container absolute left-0 right-0 top-20 text-center text-white drop-shadow-3xl">
+	  <div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+		<div class="absolute top-0 left-0 bottom-0 right-0 bg-black opacity-20 md:opacity-0"></div>
+		<!-- <img class="relative brightness-95" src="/groningen.jpg" /> -->
+		<div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
 			<div class="text-4xl leading-relaxed font-medium">16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research</div>
 			<div class="text-3xl mt-4">Groningen, the Netherlands</div>
 			<div class="text-3xl mt-4">June 24th - 27th, 2025</div>
 		</div>
 	  </div>
+	  <!-- </div> -->
 
       <div class="container px-4 py-4">
 		<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Save the date!</h2>
@@ -55,7 +57,7 @@ import { FULL_TITLE } from "../consts";
           </tbody>
         </table>
 
-		<p class="text-center my-8">More information is coming soon</p>
+		<p class="text-center mt-12 mb-8">More information is coming soon</p>
       </div>
     </main>
     <Footer />

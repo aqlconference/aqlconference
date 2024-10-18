@@ -3,21 +3,22 @@ import HeaderLink from "./HeaderLink.astro";
 import { FULL_TITLE, SHORT_TITLE } from "../consts";
 ---
 
-<header class="border-b-2 py-4">
+<header class="border-b-2">
   <div class="container px-4">
     <nav class="flex justify-between items-center">
-      <div>
+      <div class="flex-1">
         <h1 class="text-3xl font-medium"><a href="/">{SHORT_TITLE}</a></h1>
         <!-- <div>{FULL_TITLE}</div> -->
       </div>
-      <!-- <div>
-        <HeaderLink href="/">Home</HeaderLink>
-        <HeaderLink href="/blog">Keynote Speakers</HeaderLink>
-        <HeaderLink href="/general-information">General Information</HeaderLink>
+      <!-- <div> -->
+        <HeaderLink href="/" class="hidden md:block">Home</HeaderLink>
+        <HeaderLink href="/submission">Abstract Submission</HeaderLink>
+        <!-- <HeaderLink href="/keynote-speakers">Keynote Speakers</HeaderLink> -->
+        <!-- <HeaderLink href="/general-information">General Information</HeaderLink>
         <HeaderLink href="/program">Program</HeaderLink>
         <HeaderLink href="/venue">Venue</HeaderLink>
-        <HeaderLink href="/contact">Contact</HeaderLink>
-      </div> -->
+        <HeaderLink href="/contact">Contact</HeaderLink> -->
+      <!-- </div> -->
     </nav>
   </div>
 </header>

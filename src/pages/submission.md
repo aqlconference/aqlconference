@@ -3,7 +3,7 @@ layout: ../layout.astro
 title: 'Abstract Submission'
 ---
 
-Please submit your abstract via the Microsoft CMT system using the following [link](https://cmt3.research.microsoft.com/AQL2025/Submission/Index). 
+Please submit your abstract via the Microsoft CMT system using [the following link](https://cmt3.research.microsoft.com/AQL2025/Submission/Index). 
 
 When submitting, please keep in mind the following:
 
@@ -15,9 +15,3 @@ When submitting, please keep in mind the following:
 - Notification of acceptance/rejection: **3 March 2025**.
 
 If you have any questions, don't hesitate to contact us at conferenceaql@gmail.com.
-
-## Information for presenters
-
-Oral presentations: each oral presentation will be 12 minutes, including a 3 minute question-period.
-
-Posters presentations: please ensure that posters are either A0 portrait or A1 landscape.

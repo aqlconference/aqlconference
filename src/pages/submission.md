@@ -3,7 +3,9 @@ layout: ../layout.astro
 title: 'Abstract Submission'
 ---
 
-You can submit your abstract on this page once abstract submissions are open. When submitting, please keep in mind the following:
+Please submit your abstract via the Microsoft CMT system using the following link: [link](https://cmt3.research.microsoft.com/AQL2025/Submission/Index) 
+
+When submitting, please keep in mind the following:
 
 - Make sure your abstract does not exceed **2 pages** (including figures and references) and that it follows the [template](/Abstract_Template_AQL2025.docx) provided.
 - Upload your abstract as a **PDF**.

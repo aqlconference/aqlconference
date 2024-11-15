@@ -1,0 +1,47 @@
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <HeadBase title={FULL_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+
+<div class="container px-4 py-4">
+        <h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Organising Committee</h2>
+
+        <table class="my-8 mx-auto [&_th]:text-right [&_tr>*]:py-2">
+        	<tbody>
+		        <tr>
+				<td class="w-5/12"><img src="../public/photo_Defne.jpg" alt="" /></tr>
+		              	<th class="w-5/12"><b>Defne Abur, PhD <br/> Head of Organising Committee</b></th>
+		              	<td class="w-5/12"> bla bla Defne </td>
+			</tr>
+			<tr>
+				<th class="w-5/12"><b>Thomas Tienkamp</b></th>
+				<td class="w-5/12"><img src="../public/photo_Thomas.jpg" alt="" />
+			</tr>
+			<tr>
+				<td class="w-5/12"><img src="../public/photo_Frank.jpg" alt="" />
+				<th class="w-5/12"><b>Frank Tsiwah, PhD</b></th>
+				<td class="w-5/12"> bla bla Frank</td>
+			</tr>
+			<tr>
+				<th class="w-5/12"><b>Valentine Lucquiault</b></th>
+				<td class="w-5/12"><img src="../public/photo_Valentine.jpg" alt="" />
+				<td class="w-5/12"> bla bla Valentine</td>
+			</tr>
+          </tbody>
+        </table>
+</div>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,52 @@
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <HeadBase title={FULL_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+  
+  
+      <div class="container px-4 py-4">
+        <h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Organising Committee</h2>
+
+      <div class="bg-gray-100">
+        <div class="container px-4 py-4">
+          <h2 class="text-blue-900 font-bold text-3xl text-center mt-12">Previous events</h2>
+          <img class="mx-auto my-8" src=".../public/photo_Frank.jpg" />
+        </div>
+      </div>
+      <div class="bg-white">
+        <div class="container px-4 py-4">
+          <h2 class="text-blue-900 font-bold text-3xl text-center mt-12">Previous events</h2>
+          <img class="mx-auto my-8" src="/previous-events.png" />
+        </div>
+      </div>
+
+ </div>
+
+ <section id="banner">
+	<div class="content">
+		<header class="major">
+			<h2>Organisers</h2>
+		</header>
+		<div>
+			<div>
+				<a href="" class="image"><img src="../public/photo_frank.jpg" alt="" /></a>
+				<h3>Frank Tsiwah, PhD</h3>
+				<p>Dr. Frank Tsiwah is an Assistant Professor of (Neuro-) Computational Linguistics, situated within the Center for Language and Cognition Groningen (CLCG), University of Groningen. Previously, he was a lecturer in Computational Linguistics at the department of Artificial Intelligence, in the Bernoulli Institute for Mathematics, Computer Science and Artificial Intelligence, University of Groningen. His current research focuses on the use of Large Language Models and other machine learning approaches towards investigating speech, language, and human cognition, with particular emphasis on disordered speech and language.</p>
+		    </div>	
+		</div>
+  
+    </main>
+    <Footer />
+  </body>
+</html>

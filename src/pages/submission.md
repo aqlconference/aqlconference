@@ -16,16 +16,7 @@ When submitting, please keep in mind the following:
 
 If you have any questions, don't hesitate to contact us at conferenceaql@gmail.com.
 
-![test]('./public/topics-wordcloud.png')
-
-<div class="bg-gray-100">
-        <div class="container px-4 py-4">
-                <h2>Main Topics</h2>
-          <div class='container top-50 px-8 py-4 text-center' >
-        		We particularly encourage submissions from research on quantitative approaches to improving understanding of voice and speech disorders. 
-        		<br/>We welcome the following topics as they relate to quantitative approaches to laryngology, voice and speech research: 
-        	       <div class="container px-4 py-4">
-        	  		<img class="mx-auto my-8" src="public/topics-wordcloud.png" />
-        	</div>
-        </div>
-      </div>
+<h2>Main Topics</h2>
+We particularly encourage submissions from research on quantitative approaches to improving understanding of voice and speech disorders. 
+<br/>We welcome the following topics as they relate to quantitative approaches to laryngology, voice and speech research: 
+![Alt Text](/public/topics-wordcloud.png)

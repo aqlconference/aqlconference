@@ -16,7 +16,7 @@ When submitting, please keep in mind the following:
 
 If you have any questions, don't hesitate to contact us at conferenceaql@gmail.com.
 
-![test]('/topics-wordcloud.png')
+![test]('./public/topics-wordcloud.png')
 
 <div class="bg-gray-100">
         <div class="container px-4 py-4">

@@ -19,4 +19,29 @@ If you have any questions, don't hesitate to contact us at conferenceaql@gmail.c
 <h2>Main Topics</h2>
 We particularly encourage submissions from research on quantitative approaches to improving understanding of voice and speech disorders. 
 <br/>We welcome the following topics as they relate to quantitative approaches to laryngology, voice and speech research: 
-[](public/topics-wordcloud.png)
+- Speech Pathologies
+- Laryngeal/Voice Pathologies
+- Speech Motor Control
+- Somatosensory function
+- Autonomic function
+- Neurobiology
+- Neurophysiology
+- Molecular & Cellular Biology 
+- (Neuro-) Imaging
+- Machine learning
+- Advanced data analysis
+- Data science & Processing
+- Image processing
+- (Neuro-) Computational modelling
+- Experimental modelling
+- Respiratory kinematics
+- Electromagnetic articulography
+- Biomechanics
+- Aerodynamics
+- Acoustics
+- Tissue engineering
+- Fluid-structure-acoustic interactions
+
+
+
+

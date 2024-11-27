@@ -19,4 +19,4 @@ If you have any questions, don't hesitate to contact us at conferenceaql@gmail.c
 <h2>Main Topics</h2>
 We particularly encourage submissions from research on quantitative approaches to improving understanding of voice and speech disorders. 
 <br/>We welcome the following topics as they relate to quantitative approaches to laryngology, voice and speech research: 
-![Alt Text](/public/topics-wordcloud.png)
+[](public/topics-wordcloud.png)

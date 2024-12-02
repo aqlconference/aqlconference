@@ -63,7 +63,8 @@ hellooooo </div>
         	<tbody>
 			<tr>
 				<td class="w-4/12">				
-					<img class="w-6/12 mx-auto my-8" src="/photo_Thomas.jpg" alt="">
+					<div id='gradient'>
+<img class="w-6/12 mx-auto my-8" src="/photo_Thomas.jpg" alt=""></div>
 					<p class='text-center'>
 						<b>Thomas Tienkamp</b></br>
 						PhD Candidate</br>
@@ -95,3 +96,11 @@ hellooooo </div>
     <Footer />
   </body>
 </html>
+
+
+#gradient {
+  width: 200px;
+  border: 30px solid;
+  border-image: repeating-linear-gradient(45deg, #f33, #3bf, #f33 30px) 60;
+  padding: 20px;
+}

@@ -1,0 +1,117 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <HeadBase title={FULL_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="absolute top-0 left-0 bottom-0 right-0 bg-black opacity-20 md:opacity-0"></div>
+        <!-- <img class="relative brightness-95" src="/groningen.jpg" /> -->
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+<p class="text-center mt-12 mb-8"><a href="/submission" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Submit your abstract</a></p>
+
+      </div>
+<button onclick="myFunction()">Try it</button>
+
+<div id="myDIV">
+This is my DIV element.
+</div>
+
+<p><b>Note:</b> The element will not take up any space when the display property 
+is set to "none".</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<div class="container px-4 py-4">
+	<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Keynote Sepakers</h2>
+		<div class='bg-gray-100 text-center'>
+			<table class="my-6 mx-auto [&_th]:text-right">
+				<tbody>
+					<tr>
+						<td class='py-4 mx-auto'>
+							<img class='w-6/12 mx-auto' style='border-radius:50%; overflow:hidden' src="/photo_Defne.png" alt="" />
+						</td>
+						<td>
+							<p class='text-center'>
+								<h4 class="text-blue-900 font-bold text-xl mt-8 mb-4">Chair</h4>
+								<b>Defne Abur</b></br>
+								Assistant Professor of Speech and Speech Technology</br>
+								<i>Center for Language and Cognition Groningen</i>
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+<div class='bg-white'>
+<table class="mx-auto mt-8 [&_th]:text-right [&_tr>*]:py-2">
+	<tbody>
+			<tr>
+				<td class="w-3/12">				
+					<img class="w-6/12 mx-auto"  style='border-radius:50%; overflow:hidden'src="/photo_Frank.png" alt="">
+				</td>
+				<td class="w-3/12">				
+					<img class="w-6/12 mx-auto"  style='border-radius:50%; overflow:hidden'src="/photo_Michelle.png" alt="">
+				</td>
+				<td class="w-3/12">		
+					<img class="w-6/12 mx-auto"  style='border-radius:50%; overflow:hidden' src="/photo_Thomas.png" alt="">
+				</td>
+				<td class="w-3/12">				
+					<img class="w-6/12 mx-auto" style='border-radius: 50%; overflow: hidden;' src="/photo_Valentine.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td class='text-center mx-auto my-8'>
+						<b>Frank Tsiwah</b></br>
+						Assistant Professor</br>
+						<i>Center for Language and Cognition Groningen</i>
+				</td>
+				<td class='text-center mx-auto my-8'>
+						<b>Michelle Bretl</b></br>
+						PhD Candidate</br>
+						<i>University of Wisconsin-Madison, Department of Communication Sciences and Disorders</i>
+				</td>
+				<td class='text-center mx-auto my-8'>
+						<b>Thomas Tienkamp</b></br>
+						PhD Candidate</br>
+						<i>Center for Language and Cognition Groningen</i>
+				</td>
+				<td class='text-center mx-auto my-8'>
+					<b>Valentine Lucquiault</b></br>
+					Graduate Researcher</br>
+					<i>Center for Language and Cognition Groningen</i>
+				</td>
+			</tr>
+          </tbody>
+        </table>
+</div>
+</div>
+    </main>
+    <Footer />
+  </body>
+</html>

@@ -1,1 +1,90 @@
 
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <HeadBase title={FULL_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+        <p class="text-center mt-12 mb-8"><a href="/submission" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Submit your abstract</a></p>
+</div>
+
+<div>
+	<div class="container px-4 py-4 text-center">
+		<h2 class="text-blue-900 font-bold text-3xl text-center">Er gaat niets boven Groningen.</h2>
+		<h3 class="text-blue-900 text-3xl text-center"><i>There is nothing above Groningen.</i></h3>
+	</div>
+
+
+        <div class='container mx-center left-20 right-20 top-50 px-4 py-4 text-center' >
+        	<p class='text-center'>
+		      As a lively university city, Groningen has the youngest average population in the Netherlands. 
+          It has been named the best biking city in the Netherlands. In addition, it was once proclaimed the city with the best city centre in the Netherlands because of its charm. 
+		      </p>
+        	<div class='mx-center my-8'>
+			<iframe class='mx-auto w-10/12' height='500' width='auto'
+				src=""> 
+      			</iframe> 
+
+
+<iframe src="https://www.youtube-nocookie.com/embed/yGp9IX2M8jI?origin=https://groningen.nl&amp;rel=0&amp;autoplay=0&amp;mute=1&amp;loop=1&amp;color=white&amp;controls=0&amp;modestbranding=1&amp;playsinline=1&amp;enablejsapi=1" 
+class="m-bg-video__iframe" title="Groningen, international city" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" aria-hidden="true" tabindex="-1" 
+id="widget2" data-gtm-yt-inspected-7="true"></iframe>
+		</div>
+   	</div>
+<div> Want to learn more? Check out the information below! </div>
+
+
+<div>
+        	<div class="container px-4 py-4 bg-gray-100">
+              		<h4 class="text-blue-900 font-bold text-3xl text-center">City and province</h4>
+           <div class='container mx-center left-20 right-20 top-50 px-4 py-4 text-center' >
+        	  <p class='text-center'>
+		      [https://groningen.nl/internationals/about-groningen/city-and-province]  add image
+          </p>
+		</div>
+
+
+Food and Drink
+Cafes? Other items we want to highlight?
+
+Museums and events: 
+https://groningen.nl/internationals/culture-events --> add image 
+
+    	<!--
+	<div>
+		<div class="container px-4 py-4 bg-gray-100">
+			<h4 class="text-blue-900 font-bold text-3xl text-center">Getting to the venue</h4>
+		</div>
+		<div class="container px-8 py-4 bg-white text-center">
+		    <p class='text-center'>
+		      The House of Connections is approximately 16 minutes walking distance from the train station. </br>
+		      If you prefer to take the bus instead, then check the bus schedules on <u><a href='www.9292.nl'>www.9292.nl</a></u>.
+		    </p>
+		   <p class="text-center mt-12 mb-8"><a href="/venue-hoc" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">About the venue</a></p>
+		</div>
+    	</div> -->
+</div>
+</div>
+</div>
+    </main>
+    <Footer />
+  </body>
+</html>

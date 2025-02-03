@@ -11,7 +11,7 @@ When submitting, please keep in mind the following:
 - Upload your abstract as a **PDF**.
 - In the abstract submission form, please indicate whether you would prefer to present your work as an **oral presentation**, as a **poster presentation**, or **either**. (Please note that we might not be able to accommodate all preferences and, if your abstract is accepted, we might assign you to your non-preferred presentation mode if necessary.)
 - Reviewing will be **single-blind** (i.e., reviewers will remain anonymous, but your name will be known to the reviewers and the programme committee). This means that you are free to reference your own previous work without anonymization.
-- Submission deadline: **31 January 2025**.
+- Submission deadline: **Wednesday 5 February 2025, 23:59 CET**.
 - Notification of acceptance/rejection: **3 March 2025**.
 
 If you have any questions, don't hesitate to contact us at conferenceaql@gmail.com.

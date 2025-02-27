@@ -1,0 +1,58 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <HeadBase title={FULL_TITLE} />
+  </head> 
+  <body>
+    <Header />
+    <main>
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+        <p class="text-center mt-12 mb-8"><a href="/submission" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Submit your abstract</a></p>
+</div>
+
+<div class="container px-4 py-4">
+	<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Registration & Information</h2>
+
+
+	<div class='flex flex-wrap px-4 py-4 mt-8'>
+		<div class='hover:bg-blue-800 hover:text-white flex-1 px-4 py-4 mx-8 mt-8 transition shadow-md hover:shadow-xl shadow-blue-800/50'>
+			<img class="w-6/12 mx-auto"  style='border-radius:50%; overflow:hidden'src="/photo_SonjaKotz.png" alt="">
+			<p class='text-center mx-auto my-8 px-4'>
+				<b>Sonja Kotz</b></br>
+				<i>Basic & Applied NeuroDynamics Laboratory</br>
+				Maastricht University, Netherlands</i>
+				</p>
+			<p class='text-center mx-auto my-8 px-4'>
+			Sonja Kotz is a translational cognitive neuroscientist, investigating temporal, rhythmic, and
+			formal predictions in audition, music, and speech across the lifespan, pathologies (PD,
+			stroke, tinnitus, psychosis, dyslexia), and animal models. In her research she utilizes a
+			wide range of behavioral and neuroimaging methods (M/EEG, s/f/rsMRI, TMS). She heads
+			the Neuropsychology section at Maastricht University (NL) and holds honorary
+			professorships at the University of Leipzig (DE), and University of Lisbon (PT). She is a
+			senior/associate editor for Imaging Neuroscience, Cortex, Neurobiology of Language, and
+			PlosOne. Find out more about her <a href='www.band-lab.com'>Basic and Applied NeuroDynamics lab</a>. 
+			</p>
+		</div>
+		
+</div>
+
+
+    </main>
+    <Footer />
+  </body>
+</html>

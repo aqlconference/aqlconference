@@ -1,0 +1,85 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <HeadBase title={FULL_TITLE} />
+  </head> 
+  <body>
+    <Header />
+    <main>
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+</div>
+
+<div class='flex py-4 mt-8 text-center'>
+	<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Booking Procedure for Non-Trainees</h2>
+	
+	<table>
+		<tr>
+			<td></td>
+			<td><img class="w-6/12 mx-auto"  src="/happytraveller.jpg" alt=""></td>
+			<td><img class="w-6/12 mx-auto"  src="/halbert.jpg" alt=""></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><b>The Happy Traveller</b></td>
+			<td><b>Hotel Halbert</b></td> 
+		</tr>
+		
+		<tr>
+			<td>Single room</td>
+			<td>€70-82 /night</td>
+			<td>No single rooms available</td>
+		</tr>
+		<tr>
+			<td>Double room</td>
+			<td>€92 /night</td>
+			<td>€120-133 /night</td>
+		</tr>
+		<tr>
+			<td>Distance from conference venue (walking time)</td>
+			<td>€92 /night</td>
+			<td>€120-133 /night</td>
+		</tr>
+		<tr>
+			<td>Website</td>
+			<td>€92 /night</td>
+			<td>€120-133 /night</td>
+		</tr>
+		<tr>
+			<td>Contact address</td>
+			<td>rick@thehappytraveler.nl</td>
+			<td>info@gardehotels.nl</td>
+		</tr>
+	</table>
+		
+	<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">How to book</h2>
+	<p>
+		Send an email to the contact address for your chosen hotel, and mention the AQL conference. The email must contain the following information:</br>
+		<ul>
+		<li>First and last name for all guests</li>
+		<li>Email adress</li>
+		<li>Phone number</li>
+		<li>Check-in date</li>
+		<li>Check-out date</li>
+		</ul>
+	</p>
+	</div>
+ 
+</main>
+<Footer />
+</body>
+</html>

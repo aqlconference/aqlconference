@@ -1,0 +1,76 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <HeadBase title={FULL_TITLE} />
+  </head> 
+  <body>
+    <Header />
+    <main>
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+        </div>
+
+<div class="container px-4 py-4 text-center">
+
+	<div class='flex flex-col py-4 mt-8 mb-8 text-center'>
+		<div class='text-3xl flex flex-col py-4 mt-8 text-center font-bold bg-blue-900 text-white'>
+					Er gaat niets boven Groningen. • <i>There is nothing above Groningen.</i>
+		</div>
+		<div class='flex flex-col py-4 mt-8 text-center'>
+			<p class='mt-8'>
+				As a lively university city, Groningen has the youngest average population in the
+				Netherlands. It has been named the best biking city in the Netherlands. In addition, it was
+				once proclaimed the city with the best city centre in the Netherlands because of its charm.
+			<p/>
+			<iframe src="https://www.youtube-nocookie.com/embed/yGp9IX2M8jI?origin=https://groningen.nl&amp;rel=0&amp;autoplay=0&amp;mute=1&amp;loop=1&amp;color=white&amp;controls=0&amp;modestbranding=1&amp;playsinline=1&amp;enablejsapi=1" 
+			class="m-bg-video__iframe" title="Groningen, international city" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" aria-hidden="true" tabindex="-1" 
+			id="widget2" data-gtm-yt-inspected-7="true">
+			</iframe>
+			<p>Want to learn more? Check out the information below!</p>
+		</div>
+		
+		<div class='flex flex-col py-4 mt-8 text-center'>
+			<h2 class="text-blue-900 font-bold text-3xl text-center">City & Province</h2>
+	
+			<p class='flex flex-col py-4 mt-8 text-center'> 
+				A little spiel about how Groningen is capital of the province and has a lot to offer.
+			</p>
+	
+				<div class='w-12/12 flex flex-wrap mt-8'>
+					<div class='w-4/12 flex-1 px-4 py-4 transition shadow-md shadow-blue-800/50'>
+						<img class="mx-auto mt-8"  src="/academie.jpg" alt="">
+						<p class='mt-8 text-blue-900 font-bold text-xl'>City & Province<p></br>
+						</p>
+						<p>Groningen is capital of the province, there's so much to do yay!</p>
+					</div>
+					<div class='w-4/12 flex-1 px-4 py-4 transition shadow-md shadow-blue-800/50'>
+						<img class="mx-auto mt-8"  src="/academie.jpg" alt="">
+						<p class='mt-8 text-blue-900 font-bold text-xl'>City & Province<p></br>
+						</p>
+						<p>Groningen is capital of the province, there's so much to do yay!</p>
+					</div>		
+				</div>
+		</div>
+</div>
+
+
+
+</div>
+</main>
+<Footer />
+</body>
+</html>

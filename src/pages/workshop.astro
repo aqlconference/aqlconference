@@ -1,0 +1,46 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <HeadBase title={FULL_TITLE} />
+  </head> 
+  <body>
+    <Header />
+    <main>
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+        </div>
+
+<div class="container px-4 py-4">
+
+  <div class='flex flex-wrap py-4 mt-8 mb-8 text-center'>
+  	<div class='text-3xl flex flex-col py-4 pl-64 mt-8 text-center bg-blue-900 text-white'>
+  	  Er gaat niets boven Groningen</i>
+  	</div>
+<div class='text-3xl flex flex-col py-4 pl-64 mt-8 text-center bg-blue-600 text-white'>
+  	  Groningen is amazing</i>
+  	</div>
+	</div>
+
+
+
+
+</div>
+
+</main>
+<Footer />
+</body>
+</html>

@@ -13,7 +13,22 @@ import { FULL_TITLE } from "../consts";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../main.js" defer></script>
+    <script defer>
+const initApp  = () => {
+  const hamburgerBtn = document.getElementById('hamburger-button')
+  const mobileMenu = document.getElementById('mobile-menu')
+
+  const toggleMenu = () => {
+    mobileMenu.classList.toggle('hidden')
+    mobileMenu.classList.toggle('flex')
+  }
+
+  hambugerBtn.addEventListener('click', toggleMenu)
+  mobile.addEventListener('click', toggleMenu)
+}
+
+document.addEventListener('DOMContentLoaded', initApp)
+</script>
 </head>
 
 <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
@@ -26,7 +41,7 @@ import { FULL_TITLE } from "../consts";
                 <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
                     &#9776;
                 </button>
-                <nav class="md:block space-x-8 text-xl" aria-label="main">
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
                     <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
                     <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
                     <a href="#contact" class="hover:opacity-90">Contact Us</a>

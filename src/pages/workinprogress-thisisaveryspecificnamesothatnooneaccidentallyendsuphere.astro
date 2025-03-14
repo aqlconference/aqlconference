@@ -16,18 +16,6 @@ import { FULL_TITLE } from "../consts";
     <script defer>
 document.addEventListener('DOMContentLoaded',alert("loaded"))
 
-  // Find all buttons with the `alert` class on the page.
-  const buttons = document.querySelectorAll('button.alert');
-
-  // Handle clicks on each button.
-  buttons.forEach((button) => {
-    button.addEventListener('click', () => {
-      alert('Button was clicked!');
-    });
-  });
-
-
-
 document.addEventListener('click', alert('full function run'))
 
 </script>
@@ -72,7 +60,7 @@ document.addEventListener('click', alert('full function run'))
                     We Boldy Go <span class="text-indigo-700 dark:text-indigo-300">Where No Rocket</span> Has Gone
                     Before...
                 </h2>
-<button class="alert" client:load>Click me!</button>
+<button class="alert">Click me!</button>
 
                 <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
                     We're building rockets for the next century today. From the moon to Mars, Jupiter and beyond...

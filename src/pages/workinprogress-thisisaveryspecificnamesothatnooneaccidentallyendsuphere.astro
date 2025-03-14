@@ -14,25 +14,13 @@ import { FULL_TITLE } from "../consts";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer>
+document.addEventListener('DOMContentLoaded',alert("loaded"))
 
 const mobileMenu = document.getElementById('mobile-menu')
 mobileMenu.addEventListener('click', alert('foun it'))
 
-const initApp  = () => {
-  const hamburgerBtn = document.getElementById('hamburger-button')
-  
 
-  const toggleMenu = () => {
-alert("hi from the toggle function")
-  }
-
-  hambugerBtn.addEventListener('click', toggleMenu)
-  document.addEventListener('click', alert("we're in"))
-}
-
-document.addEventListener('DOMContentLoaded',alert("loaded"))
-
-document.addEventListener('click', mobileMenu.classList.toggle('hidden'))
+document.addEventListener('click', alert('full function run'))
 
 </script>
 </head>

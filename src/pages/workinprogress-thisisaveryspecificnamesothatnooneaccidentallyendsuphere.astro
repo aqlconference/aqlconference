@@ -13,10 +13,10 @@ import { FULL_TITLE } from "../consts";
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script defer>
+document.addEventListener('DOMContentLoaded',alert("loaded"))
 
 <script>
-
   class AstroHeart extends HTMLElement {
     connectedCallback() {
       let count = 0;
@@ -33,7 +33,10 @@ import { FULL_TITLE } from "../consts";
   }
 
   customElements.define('astro-heart', AstroHeart);
+</script>
 
+
+document.addEventListener('click', alert('full function run'))
 
 </script>
 </head>

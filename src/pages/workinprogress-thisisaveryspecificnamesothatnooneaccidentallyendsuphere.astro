@@ -14,15 +14,21 @@ import { FULL_TITLE } from "../consts";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer>
+const initApp  = () => {
+  const hamburgerBtn = document.getElementById('hamburger-button')
+  const mobileMenu = document.getElementById('mobile-menu')
 
-document.addEventListener('DOMContentLoaded', (event) => {
-const hamburgerBtn = document.querySelector<HTMLButtonElement>('.nav-burger');
+  const toggleMenu = () => {
+    mobileMenu.classList.toggle('hidden')
+    mobileMenu.classList.toggle('flex')
+alert("hello")
+  }
 
-function toggleMenu(): void {
-alert("hello");}
-  hamburgerBtn?.addEventListener('click', toggleMenu);
-});
+  hambugerBtn.addEventListener('click', toggleMenu)
+  mobile.addEventListener('click', toggleMenu)
+}
 
+document.addEventListener('DOMContentLoaded', initApp)
 </script>
 </head>
 
@@ -33,7 +39,7 @@ alert("hello");}
                 <a href="#hero">🚀 Acme Rockets</a>
             </h1>
             <div>
-                <button id="hamburger-button" class="nav-burger text-3xl md:hidden cursor-pointer">
+                <button id="hamburger-button" class="text-3xl md:hidden cursor-pointer">
                     &#9776;
                 </button>
                 <nav class="hidden md:block space-x-8 text-xl" aria-label="main">

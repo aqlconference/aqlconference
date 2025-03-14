@@ -16,8 +16,24 @@ import { FULL_TITLE } from "../consts";
     <script defer>
 document.addEventListener('DOMContentLoaded',alert("loaded"))
 
-const mobileMenu = document.getElementById('mobile-menu')
-mobileMenu.addEventListener('click', alert('foun it'))
+<script>
+  class AstroHeart extends HTMLElement {
+    connectedCallback() {
+      let count = 0;
+
+      const heartButton = this.querySelector('button');
+      const countSpan = this.querySelector('span');
+
+      // Each time the button is clicked, update the count.
+      heartButton.addEventListener('click', () => {
+        count++;
+        countSpan.textContent = count.toString();
+      });
+    }
+  }
+
+  customElements.define('astro-heart', AstroHeart);
+</script>
 
 
 document.addEventListener('click', alert('full function run'))
@@ -64,6 +80,10 @@ document.addEventListener('click', alert('full function run'))
                     We Boldy Go <span class="text-indigo-700 dark:text-indigo-300">Where No Rocket</span> Has Gone
                     Before...
                 </h2>
+<astro-heart>
+  <button aria-label="Heart">💜</button> × <span>0</span>
+</astro-heart>
+
                 <p class="max-w-md text-2xl mt-4 text-center sm:text-left text-slate-700 dark:text-slate-400">
                     We're building rockets for the next century today. From the moon to Mars, Jupiter and beyond...
                 </p>

@@ -8,151 +8,214 @@ import { FULL_TITLE } from "../consts";
 
 <!doctype html>
 <html lang="en">
+
 <head>
-    <HeadBase title={FULL_TITLE} />
-  </head> 
-  <body>
-    <Header />
-    <main>
-<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
-        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
-          <div class="text-4xl leading-relaxed font-medium">
-            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme Rockets</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/main.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+  <header class="sticky top-0 z-10 bg-teal-700 text-white">
+    <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+      <h1 class="text-3xl font-medium">
+        <a href="#hero">🚀 Acme Rockets</a>
+      </h1>
+      <div>
+        <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+          <!-- &#9776; -->
+          <div
+            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
           </div>
-          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
-          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
-        </div>
-        </div>
+        </button>
+        <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+          <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+          <a href="#contact" class="hover:opacity-90">Contact Us</a>
+        </nav>
+      </div>
+    </section>
+    <section id="mobile-menu"
+      class="top-68 justify-center absolute hidden w-full origin-top animate-open-menu flex-col bg-black text-5xl">
+      <!-- <button class="text-8xl self-end px-6">
+                &times;
+            </button> -->
+      <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+        <a href="#hero" class="w-full py-6 text-center hover:opacity-90">Home</a>
+        <a href="#rockets" class="w-full py-6 text-center hover:opacity-90">Our Rockets</a>
+        <a href="#testimonials" class="w-full py-6 text-center hover:opacity-90">Testimonials</a>
+        <a href="#contact" class="w-full py-6 text-center hover:opacity-90">Contact Us</a>
+        <a href="#footer" class="w-full py-6 text-center hover:opacity-90">Legal</a>
+      </nav>
+    </section>
+  </header>
+  <main class="mx-auto max-w-4xl">
+    <section id="hero"
+      class="widescreen:section-min-height tallscreen:section-min-height mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row">
+      <article class="sm:w-1/2">
+        <h2 class="max-w-md text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-left sm:text-5xl">
+          We Boldy Go
+          <span class="text-indigo-700 dark:text-indigo-300">Where No Rocket</span>
+          Has Gone Before...
+        </h2>
+        <p class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
+          We're building rockets for the next century today. From the moon to
+          Mars, Jupiter and beyond...
+        </p>
+        <p class="mt-4 max-w-md text-center text-2xl text-slate-700 dark:text-slate-400 sm:text-left">
+          Think Acme Rockets.
+        </p>
+      </article>
+      <img class="w-1/2" src="./img/rocketdab.png" alt="Rocket Dab" />
+    </section>
 
-<div class="container px-4 py-4 text-center">
+    <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-	<div class='flex flex-col py-4 mt-8 mb-8 text-center'>
-<div class='flex flex-col py-4 mt-8 text-center bg-blue-900 text-white'>
-				<p><b>Are you a presenting trainee?</b></br></br>
-					If you are presenting at the conference, registration fees will be fully covered by AQL (main conference plus workshop).</br>
-					Accommodation fees will be covered for 4 nights (check-in in June 23rd , check out June 27th).</br>
-					Please refer to your acceptance email for information on the registration and accommodation procedures.</br>
-					As a presenting trainee, the only cost incurring to you is the (optional) conference dinner. If you wish to attend, please refer to the Conference Dinner section on this page.
-				</p>
-</div>
+    <section id="rockets" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+      <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+        Our Rockets
+      </h2>
+      <ul class="mx-auto my-12 flex list-none flex-col items-center gap-8 sm:flex-row">
+        <li
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          <img src="./img/rocketman.png" alt="Explorer" class="mb-6 w-1/2" />
+          <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+            Explorer
+          </h3>
+          <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block">
+            $
+          </p>
+          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+            Affordable Exploration
+          </p>
+        </li>
+        <li
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          <img src="./img/rocketride.png" alt="Adventurer" class="mb-6 w-1/2" />
+          <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+            Adventurer
+          </h3>
+          <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block">
+            $$
+          </p>
+          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+            Best Selling Rocket!
+          </p>
+        </li>
+        <li
+          class="flex w-2/3 flex-col items-center rounded-3xl border border-solid border-slate-900 bg-white py-6 px-2 shadow-xl dark:border-gray-100 dark:bg-black sm:w-5/6">
+          <img src="./img/rocketlaunch.png" alt="Infinity" class="mb-6 w-1/2" />
+          <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+            Infinity
+          </h3>
+          <p class="mt-2 hidden text-center text-3xl text-slate-500 dark:text-slate-400 sm:block">
+            $$$
+          </p>
+          <p class="mt-2 text-center text-2xl text-slate-500 dark:text-slate-400 sm:hidden">
+            Luxury Starship
+          </p>
+        </li>
+      </ul>
+    </section>
 
-		<div class='flex flex-col py-4 mt-8 text-center'>
-				<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Registration</h2>
-				<table class='text-xl mt-8 px-4 py-4'>
-					<tr class='font-bold py-4 px-4 mt-8 mb-4'>
-						<td  class='w-4/12'><b></b></td>
-						<td  class='w-4/12'>Trainee (Bachelor, Master, PhD, post-doc)</b></td>
-						<td  class='w-4/12'><b></b>Non-Trainee</td>
-					</tr>
-				<tr class='mb-8'>
-					<td  class='w-4/12 text-right font-bold mb-4'>Early Bird (before April 30th)</td> 
-					<td  class='w-4/12'>Conference, including workshop: €150</td>
-					<td  class='w-4/12'>Main conference: €230</br>Workshop <i>(optional)</i>: + €20</br></br></td>
-				</tr>
-				
-				<tr class='mt-4'>
-					<td  class='w-4/12 text-right font-bold mb-4'>Regular (from April 30th to May 30th)</td> 
-					<td  class='w-4/12'>Conference, including workshop: €150</td>
-					<td  class='w-4/12'>Main conference: €280</br>Workshop <i>(optional)</i>: + €20</td>
-				</tr>
-			</table>
-		
-				<p class='mt-8'>
-				<b>Poster printing service:</b> €24/poster</br>
-				We offer the possibility to have your poster printed in Groningen, ready for you to pick up when you arrive. The conference will cover this cost (€24/poster).</br>
-				If you would like to make use of this printing service, please let us know in the registration form. 
-				</p>
-			<p class="text-center mt-12 mb-8"><a class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Registration will open March 17th!</a></p>
+    <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-		<p>
-		<b><i>Please only fill in this form once!</b></br>
-		If you would like to edit your registration, please get in touch at <span class='text-blue-600'><a href="mailto:conferenceaq@gmail.com">conferenceaql@gmail.com</a></span></i>
-	</p>
+    <section id="testimonials"
+      class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-20 p-6">
+      <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+        Testimonials
+      </h2>
+      <figure class="my-12">
+        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
+          <p
+            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
+            Acme has always been there for me. Their Explorer rocket arrived
+            in a wooden crate as expected. Life-long customer! A++ shopping
+            experience.
+          </p>
+        </blockquote>
+        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
+          &#8212;Wile E. Coyote, Genius
+        </figcaption>
+      </figure>
+      <figure class="my-12">
+        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
+          <p
+            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
+            The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive
+            Space Modulator on several occassions.
+            <span class="italic">This makes me very, very angry!</span>
+            Nevertheless, K-9 and I have awarded Acme the Martian contract for
+            space exploration rockets based on Acme's quality and sturdy
+            designs.
+          </p>
+        </blockquote>
+        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
+          &#8212;Marvin The Martian &amp; K-9
+        </figcaption>
+      </figure>
+      <figure class="my-12">
+        <blockquote class="relative rounded-3xl bg-teal-600 py-12 pl-14 pr-8 dark:bg-black">
+          <p
+            class="mt-2 text-left text-2xl text-white before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-2 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201C'] after:absolute after:-bottom-20 after:right-0 after:-translate-x-2 after:-translate-y-2 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201D'] dark:text-slate-400 sm:text-3xl">
+            I knew I not only wanted &#8212;
+            <span class="italic">I needed</span> &#8212; Acme's Infinity
+            Rocket for my mission in space. Acme delivered in one day! Nothing
+            says <q class="italic">Take me to your leader</q> like Acme's
+            Infinity Rocket! 💯
+          </p>
+        </blockquote>
+        <figcaption class="mt-2 text-right text-xl italic text-slate-500 dark:text-slate-400 sm:text-2xl">
+          &#8212;Buzz Lightyear
+        </figcaption>
+      </figure>
+    </section>
 
-</div>
-	<div class='flex flex-col py-4 mt-8 text-center'>
-		<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Conference Dinner on Thursday, June 26th</h2>
+    <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
 
-	<div class='flex flex-col py-4 mt-8 text-center'>
-		<p>
-			<b><u><a href = 'https://restaurantgraansilo.nl/eten-drinken/'> Graansilo Eten & Drinken</a></u></b></br>
-		</p>
-	
-		<div class='w-12/12 flex flex-wrap px-4 py-4 mt-8'>
-			<div class='w-3/12 flex-1 px-4 py-4 mx-8 transition shadow-md shadow-blue-800/50'>
-				<img src='/graansilo-left.jpg' />
-			</div>
-			<div class='w-6/12 flex-1 px-4 py-4 mx-8 transition shadow-md shadow-blue-800/50'>
-				<img src='/graansilo-outside.jpg' />
-			</div>
-			<div class='w-3/12 flex-1 px-4 py-4 mx-8 transition shadow-md shadow-blue-800/50'>
-				<img src='/graansilo-right.jpg' />
-			</div>
-		</div>
-	<p class='mt-8'>
-		<b>Conference dinner: + €70 — Book until April 30th</b></br>
-		The conference dinner will take place on the evening of Thursday, June 26th. The dinner fee is the only cost presenting trainees have to cover themselves.</br>
-		To book a spot for the dinner, please use the link below. 
-	</p>
-	
-		<p class="text-center mt-12 mb-8"><a class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Book a dinner spot - Opens March 17th!</a></p>
-		
-	</div>
-</div>
-</div>
-		<div class='flex flex-col py-4 mt-8 text-center'>
-			<h2 class="text-blue-900 font-bold text-3xl text-center">Accommodation</h2>
-	
-			<p class='flex flex-col py-4 mt-8 text-center'> 
-				When considering accommodation and travel, please note that the first day of the conference
-				(June 24th) is the workshop day and the last day of the conference (June 27th) will be a half-day.</p>
-				<p class='text-bold'>The following room options and costs are reserved for the conference until April 1st so please
-				book as soon as possible.
-			</p>
-	
-				<div class='w-12/12 flex flex-wrap px-4 py-4 mt-8'>
-					<div class='w-4/12 flex-1 px-4 py-4 mx-8 mt-8 transition shadow-md shadow-blue-800/50'>
-						<p class='text-center mx-auto my-8 px-4'>
-						<h2 class="text-blue-900 font-bold text-center mt-8">Trainee - Non-Presenting</h2>
-						<img class="mx-auto mt-8"  src="/academie.jpg" alt="">
-						<p class='mt-8'><i><b>Double room:</b> €132/night</i><p></br>
-							Please email <span class='text-blue-600'><a href="mailto:conferenceaq@gmail.com">conferenceaql@gmail.com</a></span></br>
-	 						to make a booking request.
-						</p>
-					</div>
-					<div class='w-8/12 flex-1 px-4 py-4 mx-8 mt-8 shadow-md shadow-blue-800/50'>
-						<h2 class="text-blue-900 font-bold text-center mt-8 mb-8">Non-Trainee</h2>
-						<table>
-						<tr>
-							<td><img class="w-10/12 mx-auto"  src="/happytraveller.jpg" alt=""></td>
-							<td><img class="w-10/12 mx-auto"  src="/halbert.jpg" alt=""></td>
-							</tr>
-							<tr>
-								<td>
-									<p class='text-center mx-auto my-8 px-4'>
-									<b>The Happy Traveller</b></br>
-									<i>Single room: €70-82 /night</br>
-									Double room: €92 /night</br>
-									</i>
-									</p>
-								</td>
-								<td>
-									<p class='text-center mx-auto my-8 px-4'>
-									<b>Hotel Halbert</b></br>
-									<i>Double room:</br>€120-€133 /night</i>
-									</p>
-								</td>
-							</tr>
-							</table>
-			<p class="text-center mt-12 mb-8"><a href='/non-trainee-accommodation' class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Book a room</a></p>
-						</div>
-					</div>
-		</div>
+    <section id="contact" class="widescreen:section-min-height tallscreen:section-min-height my-12 scroll-mt-16 p-6">
+      <h2 class="mb-6 text-center text-4xl font-bold text-slate-900 dark:text-white sm:text-5xl">
+        Contact Us
+      </h2>
+      <form action="" class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject"
+          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl" />
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required
+          class="w-full rounded-xl border border-solid border-slate-900 p-3 text-2xl text-black dark:border-none sm:text-3xl"></textarea>
+        <button
+          class="w-48 rounded-xl border border-solid border-slate-900 bg-teal-700 p-3 text-white hover:bg-teal-600 active:bg-teal-500 dark:border-none">
+          Submit
+        </button>
+      </form>
+    </section>
+  </main>
 
-
-
-</div>
-</main>
-<Footer />
+  <footer id="footer" class="bg-teal-700 text-xl text-white">
+    <section class="mx-auto flex max-w-4xl flex-col p-4 sm:flex-row sm:justify-between">
+      <address>
+        <h2>Acme Rocket-Powered Products, Inc.</h2>
+        555 Astro Way<br />
+        Fairfield, New Jersey 12345-5555<br />
+        Email:
+        <a href="mailto:inquiries@acmerockets.com">Inquires@AcmeRockets.com</a><br />
+        Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+      </address>
+      <nav class="hidden flex-col gap-2 md:flex" aria-label="footer">
+        <a href="#rockets" class="hover:opacity-90">Our Rockets</a>
+        <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+        <a href="#contact" class="hover:opacity-90">Contact Us</a>
+      </nav>
+      <div class="flex flex-col sm:gap-2">
+        <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
+        <p class="text-right">All Rights Reserved</p>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>

@@ -14,9 +14,13 @@ import { FULL_TITLE } from "../consts";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer>
+
+const mobileMenu = document.getElementById('mobile-menu')
+mobileMenu.addEventListener('click', alert('foun it'))
+
 const initApp  = () => {
   const hamburgerBtn = document.getElementById('hamburger-button')
-  const mobileMenu = document.getElementById('mobile-menu')
+  
 
   const toggleMenu = () => {
 alert("hi from the toggle function")
@@ -24,12 +28,11 @@ alert("hi from the toggle function")
 
   hambugerBtn.addEventListener('click', toggleMenu)
   document.addEventListener('click', alert("we're in"))
-
-
 }
 
 document.addEventListener('DOMContentLoaded',alert("loaded"))
-document.addEventListener('click', initApp)
+
+document.addEventListener('click', mobileMenu.classList.toggle('hidden'))
 
 </script>
 </head>

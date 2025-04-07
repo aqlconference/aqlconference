@@ -1,0 +1,87 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <HeadBase title={FULL_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+        <p class="text-center mt-12 mb-8"><a href="/registration" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Prepare your registration</a></p>
+</div>
+
+
+<div class="container px-4 py-4">
+	<div class='flex flex-col py-4 mt-8 text-center'>
+		<h2 class="text-blue-900 font-bold text-3xl text-center">Programme</h2>
+		<div class='px-4 py-4 mt-8 text-center flex flex-wrap md:flex-row px-8 my-8 py-8'>
+			<div class="mx-auto flex flex-row px-16 py-24">
+				<h2 class="text-blue-900 font-bold text-center mt-8 mx-8">Wednesday June 25th</h2>
+				<p class='mt-8 mx-8'>
+					8:30 – 9-30		</p>
+			</div>
+			<div class="mx-auto flex flex-col sm:flex-row px-8 py-8">
+				<h2 class="text-blue-900 font-bold text-center mt-8 mx-8">From Schiphol Airport Amsterdam</h2>
+				<p class='mt-8 mx-8'>
+					If you arrive in the Netherlands at <a href='https://schiphol.nl/en/' class='text-blue-600 underline'>Schiphol Amsterdam International Airport</a>, the
+					most convenient way to reach Groningen is by train. The underground train station
+					is situated inside the airport, within walking distance of the luggage claim areas.
+					The Dutch railway system, managed by <a href='https://ns.nl/en/' class='text-blue-600 underline'>Nederlands Spoorwegen (NS)</a>, is easily
+					identifiable by its distinctive yellow and blue colors. Simply follow the yellow
+					illuminated signs directing you 'To the trains'.</br>
+					Within each hour of the day, there are two opportunities to start your journey to Groningen: one ride is direct, the other involves a transfer in
+					Zwolle approximately one hour into the journey – a brief transfer where you move
+					from one side of the platform to the other to catch the Groningen train. If you miss this train for
+					Groningen, another departs in 30 minutes; you can also consult the schedule for a 'Sprinter' train from Zwolle to Groningen. 
+					To plan your journey, please check <a href='https://ns.nl/en/' class='text-blue-600 underline'>ns.nl</a> 
+					or <a href='https://9292.nl/en/' class='text-blue-600 underline'>9292.nl</a>
+				</p>
+			</div>
+			<div class="mx-auto flex flex-col sm:flex-row px-8 py-8">
+				<h2 class="text-blue-900 font-bold text-center mt-8 mx-8">From Eindhoven Airport</h2>
+				<p class='mt-8 mx-8'>
+					Flying to Eindhoven Airport can also be convenient. More information about the destinations can be found on the following website: 
+				    <a href='https://www.eindhovenairport.nl/en/destinations' class='text-blue-600 underline'>Destinations & inspiration | Eindhoven Airport</a>.
+				    Travelling from Eindhoven Airport to Groningen by public transport takes approximately three and a half hours. 
+				    Please plan your journey at: <a href='https://www.ns.nl/en' class='text-blue-600 underline'>Home | NS</a>.
+				</p>
+			</div>
+			<div class="mx-auto flex flex-col sm:flex-row px-8 py-8">
+				<h2 class="text-blue-900 font-bold text-center mt-8 mx-8">Arriving by car</h2>
+				<p class='mt-8 mx-8'>
+					If you're arriving by car, you can enter <a href='https://maps.app.goo.gl/1CLDKf6s1b6mCtCB8' class='text-blue-600 underline'>Parkeergarage Forum Groningen</a> 
+				    into your navigation system. From this parking garage it takes only 5 minutes to walk to the <a href='https://maps.app.goo.gl/vjgDRfJx4U8Hw5jN9' class='text-blue-600 underline'>conference venue</a>. 
+				    Pay for your parking ticket (€ 1.00 per 16 minutes, €24.00 per day) at one of the parking machines using a bank or credit card.
+				</p>
+			</div>
+		</div>
+
+		<div class='flex flex-col py-4 mt-8 mb-8 text-center'>			
+			<h4 class="text-blue-900 font-bold text-3xl text-center">Getting around Groningen</h4>
+			<p class=' container mt-8 mb-8 text-center'>
+				Groningen is a very walkable city, and all conference events will be within walking distances.</br> 
+	         		However, if you’d like to explore any bike routes during your stay, you can rent a bike in the city centre. 
+			</p>
+		</div>
+	</div>
+</div>
+</main>
+    <Footer />
+  </body>
+</html>

@@ -1,0 +1,175 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <HeadBase title={FULL_TITLE} />
+  </head>
+  <body>
+    <Header />
+    <main>
+
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+        <p class="text-center mt-12 mb-8"><a href="/registration" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Prepare your registration</a></p>
+</div>
+
+
+<div class="container px-4 py-4">
+	<div class='flex flex-col py-4 mt-8 text-center justify-center'>
+
+		<h2 class="text-blue-900 font-bold text-3xl text-center">Main Programme</h2>
+		<h4 class="text-blue-900 font-bold text-md text-center mt-8 italic underline"><a href='/workshop'>Workshop programme here!</a></h2>
+      
+<p class="text-center mt-24 mb-8"><a href="/AQL2025_PresentingSchedule.pdf" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium" download="AQL2025_PresentingSchedule.pdf">
+Download presentation schedule</a></p>
+
+		<div class='py-4 mt-8 text-center flex flex-wrap sm:flex-row justify-center'>
+
+			<div class="flex flex-col px-8">
+				<h3 class="text-blue-900 font-bold text-center justify-center">Wednesday, June 25th</h3>
+				<div class="flex flex-col py-8">
+					<div class='bg-blue-200 text-black py-12 px-12'>
+						<b>Registration</b>
+						<br>From 8:30 onward
+					</div>
+					<div class='bg-blue-900 text-white py-4 px-12'>
+						<b>Welcome to AQL</b>
+						<br>09:00 – 09:15
+					</div>
+					<div class='bg-pink-900 text-white py-16 px-12'>
+						<b>Podium Talk Session 1</b>
+						<br>09:15 – 10:10
+					</div>
+					<div class='bg-green-200 text-black py-4 px-12'>
+						<b><i>Break</i></b>
+						<br>10:10 – 10:30
+					</div>
+					<div class='bg-pink-900 text-white py-16 px-12'>
+						<b>Podium Talk Session 2</b>
+						<br>10:30 – 11:25
+					</div>
+					<div class='bg-orange-600 text-white py-20 px-12'>
+						<b>Keynote: Sonja Kotz</b>
+						<br>11:25 – 12:25
+					</div>
+					<div class='bg-green-200 text-black py-24 px-12'>
+						<b><i>Lunch</i></b>
+						<br>12:25 – 13:30
+					</div>
+					<div class='bg-pink-900 text-white py-24 px-12'>
+						<b>Podium Talk Session 3</b>
+						<br>13:30 – 14:40
+					</div>
+					<div class='bg-pink-900 text-white py-16 px-12'>
+						<b>Podium Talk Session 4</b>
+						<br>14:50 – 15:45
+					</div>
+					<div class='bg-purple-900 text-white py-30 px-12'>
+						<b>Poster Session 1</b>
+						<br>15:45 – 17:15
+					</div>
+					<div class='bg-green-600 text-black mt-4 py-40 px-12'>
+						<b>Reception</b>
+						<br>17:30 – 19:30
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col px-8">
+				<h3 class="text-blue-900 font-bold text-center justify-center">Thursday, June 26th</h3>
+				<div class="flex flex-col py-8">
+					<div class='bg-blue-200 text-black py-12 px-12'>
+						<b>Registration</b>
+						<br>From 8:30 onward
+					</div>
+					<div class='bg-pink-900 text-white py-24 px-12'>
+						<b>Podium Talk Session 5</b>
+						<br>09:00 – 10:10<br><br>
+					</div>
+					<div class='bg-green-200 text-black py-4 px-12'>
+						<b><i>Break</i></b>
+						<br>10:10 – 10:30
+					</div>
+					<div class='bg-orange-600 text-white py-20 px-12'>
+						<b>Keynote: Kaila Stipancic</b>
+						<br>10:30 – 11:30
+					</div>
+					<div class='bg-pink-900 text-white py-16 px-12'>
+						<b>Podium Talk Session 6</b>
+						<br>11:30 – 12:25
+					</div>
+					<div class='bg-green-200 text-black py-24 px-12'>
+						<b><i>Lunch</i></b>
+						<br>12:25 – 13:30
+					</div>
+					<div class='bg-pink-900 text-white py-16 px-12'>
+						<b>Podium Talk Session 7</b>
+						<br>13:30 – 14:25
+					</div>
+					<div class='bg-orange-600 text-white py-20 px-12'>
+						<b>Keynote: Srikantan Nagarajan</b>
+						<br>14:25 – 15:25
+					</div>
+					<div class='bg-green-200 text-black py-4 px-12'>
+						<b><i>Break</i></b>
+						<br>15:25 – 15:35
+					</div>
+					<div class='bg-purple-900 text-white py-32 px-12'>
+						<b>Poster Session 2</b>
+						<br>15:25 – 17:00
+					</div>
+					<div class='bg-green-600 text-black mt-32 py-32 px-12'>
+						<b>Conference Dinner</b>
+						<br>19:00 – 21:00
+					</div>
+				</div>
+			</div>
+			<div class="flex flex-col px-8">
+				<h3 class="text-blue-900 font-bold text-center justify-center">Friday, June 27th</h3>
+				<div class="flex flex-col py-8">
+					<div class='bg-blue-200 text-black py-12 px-12'>
+						<b>Registration</b>
+						<br>From 8:30 onward
+					</div>
+					<div class='bg-pink-900 text-white py-28 px-12'>
+						<b>Podium Talk Session 8</b>
+						<br>09:00 – 10:10
+					</div>
+					<div class='bg-green-200 text-black py-4 px-12'>
+						<b><i>Break</i></b>
+						<br>10:10 – 10:30
+					</div>
+					<div class='bg-pink-900 text-white py-28 px-12'>
+						<b>Podium Talk Session 9</b>
+						<br>10:30 – 11:40
+					</div>
+					<div class='bg-blue-900 text-white py-4 px-12'>
+						<b>Conference closing & Poster awards</b>
+						<br>11:40 – 12:00
+					</div>
+					<div class='bg-green-200 text-black py-8 px-12'>
+						<b><i>Bagged Lunch</i></b>
+						<br>12:00
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+</main>
+    <Footer />
+  </body>
+</html>

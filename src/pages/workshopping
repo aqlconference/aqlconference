@@ -39,7 +39,7 @@ Download presentation schedule</a></p>
 		<div class='py-4 mt-8 text-center flex flex-wrap sm:flex-row justify-center'>
 
 			<div class="flex flex-col px-8">
-				<img src='/schedule.png	/>
+				<img src='/schedule.png'	/>
 			</div>
 
 		</div>

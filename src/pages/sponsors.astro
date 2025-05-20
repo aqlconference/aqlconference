@@ -1,0 +1,66 @@
+
+---
+import HeadBase from "../components/HeadBase.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { FULL_TITLE } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+    <HeadBase title={FULL_TITLE} />
+  </head> 
+  <body>
+    <Header />
+    <main>
+<div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
+        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
+          <div class="text-4xl leading-relaxed font-medium">
+            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+          </div>
+          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
+          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
+        </div>
+        <p class="text-center mt-12 mb-8"><a href="/registration" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">Prepare your registration</a></p>
+</div>
+
+<div class="container px-4 py-4">
+	<h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Keynote Speakers</h2>
+
+
+	<div class='flex flex-wrap px-4 py-4 mt-8'>
+<div class='flex-1 px-4 py-4 mx-8 mt-8'>
+			<img class="w-6/12 mx-auto"  src="/photo_KailaLStipancic.png" alt="">
+			<p class='text-center mx-auto my-8'>
+			Sponsor name
+			</p>
+			<p class='text-center mx-auto px-4'>
+			Sponsor blurb maybe -- add a border around if fate allows
+			</p>
+	</div>
+<div class='flex-1 px-4 py-4 mx-8 mt-8'>
+			<img class="w-6/12 mx-auto"  src="/photo_KailaLStipancic.png" alt="">
+			<p class='text-center mx-auto my-8'>
+			Sponsor name
+			</p>
+			<p class='text-center mx-auto px-4'>
+			Sponsor blurb maybe -- add a border around if fate allows
+			</p>
+	</div>
+		<div class='flex-1 px-4 py-4 mx-8 mt-8'>
+			<img class="w-6/12 mx-auto"  src="/photo_KailaLStipancic.png" alt="">
+			<p class='text-center mx-auto my-8'>
+			Sponsor name
+			</p>
+			<p class='text-center mx-auto px-4'>
+			Sponsor blurb maybe -- add a border around if fate allows
+			</p>
+	</div>
+</div>
+
+
+    </main>
+    <Footer />
+  </body>
+</html>

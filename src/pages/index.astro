@@ -8,96 +8,56 @@ import { FULL_TITLE } from "../consts";
 <!doctype html>
 <html lang="en">
   <head>
-    <HeadBase title={FULL_TITLE} />
+    <HeadBase title={FULL_TITLE} image="/aql2027-logo.png" />
   </head>
-  <body>
+  <body class="bg-white text-gray-900">
     <Header />
+
     <main>
-  <div class="relative bg-[url('/groningen.jpg')] bg-cover py-20 px-4 min-h-[70vh]">
-        <div class="relative text-center text-white [text-shadow:_0_0_8px_rgb(0_0_0)]">
-          <div class="text-4xl leading-relaxed font-medium">
-            The 16th International Conference on Advances in<br />Quantitative Laryngology, Voice and Speech Research
+      <section class="bg-gradient-to-br from-blue-950 via-blue-900 to-blue-700 px-4 py-16 text-white md:py-24">
+        <div class="container mx-auto max-w-5xl text-center">
+          <p class="text-sm font-bold uppercase tracking-[0.3em] text-blue-100 md:text-base">Save the Date</p>
+
+          <h1 class="mx-auto mt-6 max-w-4xl text-3xl font-bold leading-tight md:text-5xl">
+            The 17th International Conference on Advances in Quantitative Laryngology, Voice and Speech Research
+          </h1>
+
+          <div class="mx-auto mt-10 grid max-w-3xl gap-4 md:grid-cols-2">
+            <div class="rounded-2xl border border-white/30 bg-white/10 px-6 py-5 shadow-lg backdrop-blur-sm">
+              <p class="text-sm font-semibold uppercase tracking-wider text-blue-100">Dates</p>
+              <p class="mt-2 text-2xl font-bold">
+                <time datetime="2027-06-01">June 1–3, 2027</time>
+              </p>
+            </div>
+
+            <div class="rounded-2xl border border-white/30 bg-white/10 px-6 py-5 shadow-lg backdrop-blur-sm">
+              <p class="text-sm font-semibold uppercase tracking-wider text-blue-100">Location</p>
+              <p class="mt-2 text-2xl font-bold">Boston, Massachusetts, USA</p>
+            </div>
           </div>
-          <div class="text-3xl mt-4">Groningen, the Netherlands</div>
-          <div class="text-3xl mt-4">June 24th - 27th, 2025</div>
         </div>
-<div class='justify-center flex flex-wrap px-4 py-4 mt-8 ' >
-<p class="text-center mt-24 mb-8 mx-4"><a href='/AQL2025_Program.pdf' class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium" 
-download="AQL2025_Program.pdf">
-Download full AQL program</a></p>
-<p class="text-center mt-24 mb-8 mx-4"><a href='/AQL2025_BookOfAbstracts.pdf' class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium" 
-download="AQL2025_BookOfAbstracts.pdf">
-Download the book of abstracts</a></p>
-</div>
-</div>
+      </section>
 
-      <div class="container px-4 py-4">
-        <h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Save the date!</h2>
+      <section class="px-4 py-14 md:py-20">
+        <div class="container mx-auto max-w-3xl text-center">
+          <h2 class="text-3xl font-bold text-blue-900">Conference information</h2>
+          <p class="mt-5 text-lg leading-8 text-gray-700">
+            Additional information regarding abstract submissions, registration, accommodations, the venue, and the scientific program will be announced here as it becomes available.
+          </p>
 
-        <table class="my-8 mx-auto [&_th]:text-right [&_tr>*]:py-2">
-          <tbody>
-            <tr>
-              <th class="w-5/12">Location</th>
-              <td class="w-1/12 text-center">•</td>
-              <td class="w-5/12">Groningen, the Netherlands</td>
-            </tr>
-            <tr>
-              <th class="w-5/12">Venue</th>
-              <td class="w-1/12 text-center">•</td>
-              <td class="w-5/12"><a href="https://www.rug.nl/society-business/house-of-connections/" target="_blank" class="text-blue-600 underline">House of Connections</a></td>
-            </tr>
-            <tr>
-              <th class="w-5/12">     </th>
-              <td class="w-1/12 text-center">     </td>
-              <td class="w-5/12">     </td>
-            </tr>
-            <tr>
-              <th class="w-5/12 line-through">Abstract submission opens</th>
-              <td class="w-1/12 text-center line-through">•</td>
-              <td class="w-5/12 line-through">November 18th, 2024</td>
-            </tr>
-            <tr>
-              <th class="w-5/12 line-through">Abstract submission deadline</th>
-              <td class="w-1/12 text-center line-through">•</td>
-              <td class="w-5/12 line-through">February 5th, 2025</td>
-            </tr>
-            <tr>
-              <th class="w-5/12 line-through">Authors notified by</th>
-              <td class="w-1/12 text-center line-through">•</td>
-              <td class="w-5/12 line-through">March 3rd, 2025</td>
-            </tr>
-            <tr>
-              <th class="w-5/12">Conference date</th>
-              <td class="w-1/12 text-center">•</td>
-              <td class="w-5/12">June 24th - 27th, 2025</td>
-            </tr>
-          </tbody>
-        </table>
-
-   </div>
-
-      <div class="bg-gray-100">
-        <div class="container px-4 py-4">
-                <h2 class="text-blue-900 font-bold text-3xl text-center mt-8">Main Topics</h2>
-          <div class='container top-50 px-8 py-4 text-center' >
-        		We particularly encourage submissions from research on quantitative approaches to improving understanding of voice and speech disorders. 
-        		<br/>We welcome the following topics as they relate to quantitative approaches to laryngology, voice and speech research: 
-        	       <div class="container px-4 py-4">
-        	  		<img class="mx-auto my-8" src="/topics-wordcloud.png" />
-        	</div>
+          <div class="mt-9 rounded-2xl bg-gray-100 px-6 py-7">
+            <p class="font-semibold text-gray-800">Questions or updates?</p>
+            <a
+              href="mailto:conferenceaql@gmail.com"
+              class="mt-2 inline-block text-lg font-bold text-blue-800 underline decoration-2 underline-offset-4 transition hover:text-blue-600"
+            >
+              conferenceaql@gmail.com
+            </a>
+          </div>
         </div>
-      </div>
-</div>
-
-<div class="bg-white">
-  <div class="container px-4 py-4">
-    <h2 class="text-blue-900 font-bold text-3xl text-center mt-12">Previous events</h2>
-    <img class="mx-auto my-8" src="/previous-events.png" />
-    <p class="text-center mt-12 mb-8"><a href="/about-aql" class="bg-blue-800 hover:bg-blue-600 transition shadow-md hover:shadow-lg px-8 py-4 text-white rounded-xl font-medium">
-        Learn more about AQL</a></p>
-  </div>        
-</div>
+      </section>
     </main>
+
     <Footer />
   </body>
 </html>
